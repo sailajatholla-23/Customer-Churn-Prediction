@@ -5,10 +5,13 @@ import joblib
 model = joblib.load("models/customer_Churn_model.pkl")
 feature_names=joblib.load("models/feature_names.pkl")
 
+st.set_page_config(page_title="Customer Churn Prediction", page_icon="📊", layout="wide")
+
 st.title("Customer Churn Prediction")
+st.markdown("### Predict whether a customer is likely to churn using Machine Learning")
 st.write("predict whether a customer is likely to churn based on customer details.")
 
-st.write("Enter Customer Details")
+st.subheader("Enter Customer Details")
 gender=st.selectbox("Gender",["Male","Female"])
 senior_citizen=st.selectbox("senior citizen",[0,1])
 partner=st.selectbox("partner",["Yes","No"])
