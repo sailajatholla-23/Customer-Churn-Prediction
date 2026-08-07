@@ -2,8 +2,8 @@ import streamlit as st
 import pandas as pd
 import joblib
 
-model = joblib.load("customer_Churn_model.pkl")
-feature_names=joblib.load("feature_names.pkl")
+model = joblib.load("models/customer_Churn_model.pkl")
+feature_names=joblib.load("models/feature_names.pkl")
 
 st.title("Customer Churn Prediction")
 st.write("predict whether a customer is likely to churn based on customer details.")
