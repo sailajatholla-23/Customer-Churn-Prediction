@@ -69,8 +69,19 @@ streamlit run app.py
 ---
 
 ## 📸 Project Screenshot
+## 📸 Project Screenshots
 
-_Add a screenshot of the application here._
+### 🏠 Home Page
+
+![Home Page](screenshots/Home_page.png)
+
+### ✅ Prediction - Customer Stay
+
+![Prediction Stay](screenshots/Prediction_stay.png)
+
+### ⚠️ Prediction - Customer Churn
+
+![Prediction Churn](screenshots/Prediction_churn.png)
 
 ## 👩‍💻 Author
 
@@ -80,6 +91,6 @@ GitHub:
 https://github.com/sailajatholla-23
 
 LinkedIn:
-(Add your LinkedIn profile link here)
+https://www.linkedin.com/in/sailaja-tholla
 
 ⭐ If you found this project useful, please give it a Star.
