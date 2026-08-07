@@ -27,18 +27,31 @@ monthly_charges = st.number_input("Monthly Charges")
 total_charges = st.number_input("Total Charges")
 
 if st.button("Predict Churn"):
+    input_data = {
+       "gender": gender,
+        "SeniorCitizen": senior_citizen,
+        "Partner": partner,
+        "Dependents": dependents,
+        "PhoneService": phone_service,
+        "InternetService": internet_service,
+        "Contract": contract,
+        "PaperlessBilling": paperless_billing,
+        "PaymentMethod": payment_method,
+        "tenure": tenure,
+        "MonthlyCharges": monthly_charges,
+        "TotalCharges": total_charges
+    }
 
-    input_data = pd.DataFrame(0, index=[0], columns=feature_names)
+    input_df = pd.DataFrame([input_data])
 
-    input_data["tenure"] = tenure
-    input_data["MonthlyCharges"] = monthly_charges
-    input_data["TotalCharges"] = total_charges
+    input_df = pd.get_dummies(input_df)
+    input_df = input_df.reindex(columns=feature_names, fill_value=0)
 
-    prediction = model.predict(input_data)
+    prediction = model.predict(input_df)
 
     if prediction[0] == 1:
         st.error("Customer may churn")
-        st.warning("Recommendation: review the customer's service details and retention strategy.")
+        st.warning("Recommendation: Offer discounts, improve customer support, or provide a better contract plan.")
     else:
-        st.success("Prediction: Customer is likely to stay")
+        st.success("Customer is likely to stay")
         st.balloons()
