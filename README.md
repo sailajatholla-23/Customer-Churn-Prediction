@@ -71,15 +71,15 @@ streamlit run app.py
 
 ### 🏠 Home Page
 
-![Home Page](./screenshots/Home_Page.png)
+![Home Page](screenshots/home_page.png)
 
 ### ✅ Prediction - Customer Stay
 
-![Prediction Stay](./screenshots/Prediction_stay.png)
+![Prediction Stay](screenshots/prediction_stay.png)
 
 ### ⚠️ Prediction - Customer Churn
 
-![Prediction Churn](./screenshots/Prediction_churn.png)
+![Prediction Churn](screenshots/prediction_churn.png)
 
 ## 👤 Author
 
