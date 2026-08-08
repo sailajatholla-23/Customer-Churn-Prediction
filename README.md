@@ -67,8 +67,6 @@ streamlit run app.py
 ```
 
 ---
-
-## 📸 Project Screenshot
 ## 📸 Project Screenshots
 
 ### 🏠 Home Page
@@ -78,7 +76,6 @@ streamlit run app.py
 ### ✅ Prediction - Customer Stay
 
 ![Prediction Stay](screenshots/Prediction_stay.png)
-
 ### ⚠️ Prediction - Customer Churn
 
 ![Prediction Churn](screenshots/Prediction_churn.png)
