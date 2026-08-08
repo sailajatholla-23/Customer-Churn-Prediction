@@ -71,16 +71,17 @@ streamlit run app.py
 
 ### 🏠 Home Page
 
-![Home Page](screenshots/Home_page.png)
+![Home Page](screenshots/Home_Page.png)
 
 ### ✅ Prediction - Customer Stay
 
 ![Prediction Stay](screenshots/Prediction_stay.png)
+
 ### ⚠️ Prediction - Customer Churn
 
 ![Prediction Churn](screenshots/Prediction_churn.png)
 
-## 👩‍💻 Author
+## 👤 Author
 
 **Sailaja Tholla**
 
